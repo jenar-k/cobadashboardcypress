@@ -1,7 +1,6 @@
 describe('Admin PKH', function () {
     it('TC-01 Admin PKH Coba Upload', function () {
-        cy.mainURL();
-        //cy.visit('https://demoqa.com/automation-practice-form');
+        cy.visit('https://demoqa.com/automation-practice-form');
         cy.url().should('include', 'demoqa.com');
         cy.get('#firstName').type('Jenar').should('have.value', 'Jenar');
         cy.get('#lastName').type('JenarLagi').should('have.value', 'JenarLagi');
