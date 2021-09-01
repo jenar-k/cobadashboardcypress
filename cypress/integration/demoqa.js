@@ -1,6 +1,7 @@
 describe('Demo QA', function () {
     it('TC-01', function () {
         cy.visit('https://demoqa.com/automation-practice-form');
+        cy.wait(10000)
         cy.url().should('include', 'demoqa.com');
         cy.get('#firstName').type('Jenar').should('have.value', 'Jenar');
         cy.get('#lastName').type('JenarLagi').should('have.value', 'JenarLagi');
